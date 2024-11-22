@@ -13,6 +13,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'ellies-yellow': '#FFE3BA',
+        'dark-red': '#8F0000'
+      },
+      fontFamily: {
+        script: ['var(--pinyon-script)'],
+        league_spartan: ['var(--league-spartan)'],
+        playfair: ['var(--playfair)']
+      }
     },
   },
   plugins: [],
