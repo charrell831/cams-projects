@@ -28,7 +28,7 @@ export default function Projects() {
             {isPhone ? 
                 <div className="flex flex-col gap-y-2">
                     {projects.map((proj)=> {
-                        return <ProjectRowCard project={proj} />
+                        return <ProjectCard project={proj} />
                     })}
                 </div>
             :
