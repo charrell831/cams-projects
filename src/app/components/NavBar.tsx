@@ -11,7 +11,7 @@ export default function NavBar() {
 
     return (
         <>
-             <Navbar className="bg-transparent **nav.scrolled { @apply shadow-2xl; border-bottom: 0px; }">
+             <Navbar className="px-[20%] pt-[1%] bg-transparent **nav.scrolled { @apply shadow-2xl; border-bottom: 0px; }">
                     <NavbarContent>
                         <NavbarItem className="mx-8">
                             <Button 
@@ -45,7 +45,7 @@ export default function NavBar() {
                         <NavbarItem className="mx-8">
                             <Button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
-                                onClick={() => {router.push('/projects')}}
+                                onClick={() => {router.push('/magazine')}}
                             >
                                 Magazine
                             </Button>
