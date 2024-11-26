@@ -10,7 +10,7 @@ import useMediaQuery from "../useMedia";
 export default function NavBar() {
     const router = useRouter();
     const navMenu: {name:string, dir: string}[] = [{name: 'About', dir: '/about'}, {name: 'Projects', dir: '/projects'}, {name: 'Home', dir: '/'}, {name: 'Magazine', dir: '/magazine'}, {name: 'Contact', dir: '/contact'}]
-    let isPhone = useMediaQuery("(max-width: 576px)")
+    let isPhone = useMediaQuery("(max-width: 812px)")
 
     return (
         <>
@@ -31,9 +31,9 @@ export default function NavBar() {
                         }
                     </DropdownMenu>
                 </Dropdown>  :
-             <Navbar className="px-[20%] pt-[1%] bg-transparent **nav.scrolled { @apply shadow-2xl; border-bottom: 0px; }">
-                    <NavbarContent>
-                        <NavbarItem className="mx-8">
+             <Navbar className="px-[30%] pt-[1%] bg-transparent **nav.scrolled { @apply shadow-2xl; border-bottom: 0px; }">
+                    <NavbarContent justify="center">
+                        <NavbarItem className="">
                             <Button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
                                 onClick={() => router.push('/about')}
@@ -41,7 +41,7 @@ export default function NavBar() {
                                 About
                             </Button>
                         </NavbarItem>
-                        <NavbarItem className="mx-8">
+                        <NavbarItem className="">
                             <Button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
                                 onClick={() => {router.push('/projects')}}
@@ -49,7 +49,7 @@ export default function NavBar() {
                                 Projects
                             </Button>
                         </NavbarItem>
-                        <NavbarItem className="mx-8">
+                        <NavbarItem className="">
                             <Button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent"  
                                 onClick={() => router.push('/')}
@@ -62,7 +62,7 @@ export default function NavBar() {
                                 />
                             </Button>
                         </NavbarItem>
-                        <NavbarItem className="mx-8">
+                        <NavbarItem className="">
                             <Button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
                                 onClick={() => {router.push('/magazine')}}
@@ -70,7 +70,7 @@ export default function NavBar() {
                                 Magazine
                             </Button>
                         </NavbarItem>
-                        <NavbarItem className="mx-8">
+                        <NavbarItem className="">
                             <Button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
                                 onClick={() => {router.push('/contact')}}
