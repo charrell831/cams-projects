@@ -47,7 +47,7 @@ export default function About() {
                     <div className={imagePadding}>
                         <Image 
                             className="rounded-sm content-center"
-                            src="/cam.jpg" 
+                            src="/static/cam.jpg" 
                             alt="picture of cam"
                             width={400}
                             height={400}

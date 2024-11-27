@@ -14,9 +14,9 @@ export default function Projects() {
     let isPhone = useMediaQuery("(max-width: 576px)")
 
     const projects = [
-        {imageSrc: 'mised.jpg', descList: {title: 'the miseducation of us', link: 'https://www.youtube.com/watch?v=nAOWblPoBhU&t=3s'}},
-        {imageSrc: 'jours.jpg', descList: {title: 'jours normaux', link: 'https://www.youtube.com/watch?v=fmWUyyCHqoU&t=19s'}},
-        {imageSrc: '3peat.jpg', descList: {title: 'the 3-peat', link: 'https://www.youtube.com/watch?v=uiCg45Put74'}}
+        {imageSrc: 'static/mised.jpg', descList: {title: 'the miseducation of us', link: 'https://www.youtube.com/watch?v=nAOWblPoBhU&t=3s'}},
+        {imageSrc: 'static/jours.jpg', descList: {title: 'jours normaux', link: 'https://www.youtube.com/watch?v=fmWUyyCHqoU&t=19s'}},
+        {imageSrc: 'static/3peat.jpg', descList: {title: 'the 3-peat', link: 'https://www.youtube.com/watch?v=uiCg45Put74'}}
     ]
 
 
