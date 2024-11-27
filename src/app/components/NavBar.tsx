@@ -55,7 +55,7 @@ export default function NavBar() {
                                 onClick={() => router.push('/')}
                             >
                                 <Image 
-                                    src="/logo.png" 
+                                    src="/static/logo.png" 
                                     alt="cams projects logo"
                                     width={150}
                                     height={150}
