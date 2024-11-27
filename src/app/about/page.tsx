@@ -7,7 +7,7 @@ import useMediaQuery from "../useMedia";
 export default function About() {
     let isPhone = useMediaQuery("(max-width: 576px)")
     const grid = isPhone ? "grid grid-rows-2" : "grid gap-10 grid-cols-2"
-    const padding = isPhone ? "px-[15%] pt-12" : "px-[15%] pt-12"
+    const padding = isPhone ? "px-[15%] pt-[5%]" : "pl-[20%] pt-[5%]"
     const imagePadding = isPhone ? " pt-[2%] px-[15%]" : "flex justify-center items-center pt-12 pr-[15%]"
     // flex justify-center items-center pt-12 pr-[15%]
     return (
@@ -19,7 +19,7 @@ export default function About() {
                         <br />
                         <h2 className="text-ellies-yellow font-script text-5xl drop-shadow-md">who's cam?</h2>
                         <br />
-                        <p className="text-ellies-yellow font-playfair text-1xl">
+                        <p className="text-ellies-yellow font-playfair text-xl">
                             hi! i’m cam, the person behind cam’s projects. cam’s projects 
                             is a creative studio that produces small films which includes short 
                             documentaries and narrative shorts.
@@ -40,26 +40,18 @@ export default function About() {
                         </p>
 
                         <br />
-                        <br />
-                        <h2 className="text-ellies-yellow font-script text-5xl drop-shadow-md">best,</h2>
-                        <h2 className="text-ellies-yellow font-script text-5xl drop-shadow-md">cam</h2>  
+                        <h2 className="text-right text-ellies-yellow font-script text-4xl drop-shadow-md">best,</h2>
+                        <h2 className="text-right text-ellies-yellow font-script text-4xl drop-shadow-md">cam &lt;3</h2>  
                     </div>
                     <div className={imagePadding}>
                         <Image 
-                            className="rounded-sm content-center"
+                            className="rounded-sm content-center drop-shadow-md"
                             src="/static/cam.jpg" 
                             alt="picture of cam"
-                            width={400}
+                            width={500}
                             height={400}
                         />
                     </div>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
                     <br />
                     <br />
                     <br />
