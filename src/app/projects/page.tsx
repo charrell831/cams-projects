@@ -23,7 +23,7 @@ export default function Projects() {
     return (
         <div className="bg-dark-red px-[8%]">
             <NavBar />
-            <h3 className="text-8xl font-script text-ellies-yellow drop-shadow-md">The Work</h3>
+            <h3 className="pt-12 text-8xl font-script text-ellies-yellow drop-shadow-md">The Work</h3>
             <br />
             {isPhone ? 
                 <div className="flex flex-col gap-y-2">

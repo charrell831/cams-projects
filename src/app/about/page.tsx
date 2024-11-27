@@ -7,7 +7,9 @@ import useMediaQuery from "../useMedia";
 export default function About() {
     let isPhone = useMediaQuery("(max-width: 576px)")
     const grid = isPhone ? "grid grid-rows-2" : "grid gap-10 grid-cols-2"
-    const padding = isPhone ? "px-[15%] pt-[5%]" : "px-[15%] pt-[5%]"
+    const padding = isPhone ? "px-[15%] pt-12" : "px-[15%] pt-12"
+    const imagePadding = isPhone ? " pt-[2%] px-[15%]" : "flex justify-center items-center pt-12 pr-[15%]"
+    // flex justify-center items-center pt-12 pr-[15%]
     return (
         <div className="bg-dark-red">
             <NavBar/>
@@ -42,7 +44,7 @@ export default function About() {
                         <h2 className="text-ellies-yellow font-script text-5xl drop-shadow-md">best,</h2>
                         <h2 className="text-ellies-yellow font-script text-5xl drop-shadow-md">cam</h2>  
                     </div>
-                    <div className="flex justify-center items-center pt-12 pr-[15%]">
+                    <div className={imagePadding}>
                         <Image 
                             className="rounded-sm content-center"
                             src="/cam.jpg" 

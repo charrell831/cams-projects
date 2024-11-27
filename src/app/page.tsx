@@ -9,7 +9,7 @@ export default function Home() {
       
         <header className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
           <div className="static bg-transparent">
-            <video src={'../../bg-vid.mp4'} autoPlay muted loop className='relative -z-1 top-0 w-[100%] h-[100%] object-cover'/>
+            <video src={'../../static/bg-vid.mp4'} autoPlay muted loop className='relative -z-1 top-0 w-[100%] h-[100%] object-cover'/>
             <div className="absolute inset-x-0 top-0">
               <NavBar />
             </div>
