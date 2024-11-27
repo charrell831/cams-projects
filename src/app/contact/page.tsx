@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <div className="bg-dark-red">
             <NavBar />
-            <div className="flex h-screen px-[15%]">
+            <div className="flex h-screen pt-[5%] px-[15%]">
                 <div className="m-auto">
                     <header className="text-ellies-yellow font-script text-6xl text-center">Email:</header>
                     <Link href="mailto:camsprojects931@gmail.com">

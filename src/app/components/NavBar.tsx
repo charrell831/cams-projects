@@ -31,9 +31,9 @@ export default function NavBar() {
                         }
                     </DropdownMenu>
                 </Dropdown>  :
-             <Navbar className="px-[32%] pt-[1%] bg-transparent **nav.scrolled { @apply shadow-2xl; border-bottom: 0px; }">
-                    <NavbarContent className="flex justify-center">
-                        <NavbarItem className="">
+             <Navbar className="pt-[1%] bg-transparent **nav.scrolled { @apply shadow-2xl; border-bottom: 0px; }">
+                    <NavbarContent className="grid grid-cols-5 gap-4 px-[15%]">
+                        <NavbarItem className="text-center">
                             <Button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
                                 onClick={() => router.push('/about')}
@@ -41,7 +41,7 @@ export default function NavBar() {
                                 About
                             </Button>
                         </NavbarItem>
-                        <NavbarItem className="">
+                        <NavbarItem className="text-center">
                             <Button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
                                 onClick={() => {router.push('/projects')}}
@@ -49,7 +49,7 @@ export default function NavBar() {
                                 Projects
                             </Button>
                         </NavbarItem>
-                        <NavbarItem className="">
+                        <NavbarItem className="text-center">
                             <Button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent"  
                                 onClick={() => router.push('/')}
@@ -62,7 +62,7 @@ export default function NavBar() {
                                 />
                             </Button>
                         </NavbarItem>
-                        <NavbarItem className="">
+                        <NavbarItem className="text-center">
                             <Button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
                                 onClick={() => {router.push('/magazine')}}
@@ -70,7 +70,7 @@ export default function NavBar() {
                                 Magazine
                             </Button>
                         </NavbarItem>
-                        <NavbarItem className="">
+                        <NavbarItem className="text-center">
                             <Button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
                                 onClick={() => {router.push('/contact')}}

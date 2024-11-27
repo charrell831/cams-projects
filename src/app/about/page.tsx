@@ -17,24 +17,24 @@ export default function About() {
                         <br />
                         <h2 className="text-ellies-yellow font-script text-5xl drop-shadow-md">who's cam?</h2>
                         <br />
-                        <p className="text-ellies-yellow font-league_spartan text-1xl">
-                        hi! i’m cam, the person behind cam’s projects. cam’s projects 
-                        is a creative studio that produces small films which includes short 
-                        documentaries and narrative shorts.
-                        <br />
-                        <br />
-                        the documentaries are meant to dive into stories that are not 
-                        often talked about.
-                        <br />
-                        <br />
-                        the narrative shorts are smaller, more experimental projects 
-                        that are meant to shine a light on how intentional cinematography 
-                        can tell a story without any words.
+                        <p className="text-ellies-yellow font-playfair text-1xl">
+                            hi! i’m cam, the person behind cam’s projects. cam’s projects 
+                            is a creative studio that produces small films which includes short 
+                            documentaries and narrative shorts.
+                            <br />
+                            <br />
+                            the documentaries are meant to dive into stories that are not 
+                            often talked about.
+                            <br />
+                            <br />
+                            the narrative shorts are smaller, more experimental projects 
+                            that are meant to shine a light on how intentional cinematography 
+                            can tell a story without any words.
 
-                        <br/>
-                        <br/>
-                        filmmaking is one of my many interests, i also love coding, 
-                        running and nerding out over whatever my current hyperfixation is.
+                            <br/>
+                            <br/>
+                            filmmaking is one of my many interests, i also love coding, 
+                            running and nerding out over whatever my current hyperfixation is.
                         </p>
 
                         <br />

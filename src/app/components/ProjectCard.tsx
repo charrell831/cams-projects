@@ -20,7 +20,7 @@ export default function ProjectCard(project: {project: Project}) {
                         </Link>
                         
                     </div>
-                    <h4 className="px-[2%] text-dark-red text-center font-playfair font-bold text-3xl">{project.project.descList.title}</h4>
+                    <h4 className="px-[2%] text-dark-red text-center font-playfair font-bold text-2xl">{project.project.descList.title}</h4>
                     <br/>
                     <br/>
                     <br/>
@@ -31,7 +31,7 @@ export default function ProjectCard(project: {project: Project}) {
                     <br/>
                     <br/>
                     <br/>
-                    <h3 className="pl-[2%] pb-[2%] text-dark-red font-script ">2024</h3>
+                    <h3 className="pl-[2%] pb-[2%] text-dark-red font-script">2024</h3>
                 </div>
             </div>
         </div>
