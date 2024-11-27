@@ -1,4 +1,5 @@
 import NavBar from "../components/NavBar"
+import Link from "next/link";
 
 export default function Contact() {
     return (
@@ -7,7 +8,12 @@ export default function Contact() {
             <div className="flex h-screen px-[15%]">
                 <div className="m-auto">
                     <header className="text-ellies-yellow font-script text-6xl text-center">Email:</header>
-                    <header className="text-ellies-yellow font-playfair text-4xl text-center">cams.projects831@gmail.com</header>
+                    <Link href="mailto:camsprojects931@gmail.com">
+                        <header className="text-ellies-yellow font-playfair text-4xl text-center">
+                            cams.projects831@gmail.com
+                        </header>
+                    </Link>
+                    
                 </div>
             </div>
         </div>

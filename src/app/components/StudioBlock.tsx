@@ -1,5 +1,3 @@
-
-
 export default function StudioBlock() {
     return (
         <div className="bg-dark-red flex h-screen">

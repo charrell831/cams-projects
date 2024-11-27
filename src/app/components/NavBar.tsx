@@ -31,8 +31,8 @@ export default function NavBar() {
                         }
                     </DropdownMenu>
                 </Dropdown>  :
-             <Navbar className="px-[30%] pt-[1%] bg-transparent **nav.scrolled { @apply shadow-2xl; border-bottom: 0px; }">
-                    <NavbarContent justify="center">
+             <Navbar className="px-[32%] pt-[1%] bg-transparent **nav.scrolled { @apply shadow-2xl; border-bottom: 0px; }">
+                    <NavbarContent className="flex justify-center">
                         <NavbarItem className="">
                             <Button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
