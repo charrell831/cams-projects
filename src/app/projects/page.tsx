@@ -11,7 +11,7 @@ export type Project = {
 }
 
 export default function Projects() {
-    let isPhone = useMediaQuery("(max-width: 576px)")
+    let isPhone = useMediaQuery("(max-width: 650px)")
 
     const projects = [
         {imageSrc: 'static/mised.jpg', descList: {title: 'the miseducation of us', link: 'https://www.youtube.com/watch?v=nAOWblPoBhU&t=3s'}},

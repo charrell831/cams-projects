@@ -5,10 +5,10 @@ import NavBar from "../components/NavBar"
 import useMediaQuery from "../useMedia";
 
 export default function About() {
-    let isPhone = useMediaQuery("(max-width: 576px)")
+    let isPhone = useMediaQuery("(max-width: 820px)")
     const grid = isPhone ? "grid grid-rows-2" : "grid gap-10 grid-cols-2"
     const padding = isPhone ? "px-[15%] pt-[5%]" : "pl-[20%] pt-[5%]"
-    const imagePadding = isPhone ? " pt-[2%] px-[15%]" : "flex justify-center items-center pt-12 pr-[15%]"
+    const imagePadding = isPhone ? "flex justify-center items-center pt-[2%] px-[15%]" : "flex justify-center items-center pt-12 pr-[15%]"
     // flex justify-center items-center pt-12 pr-[15%]
     return (
         <div className="bg-dark-red">
@@ -48,8 +48,8 @@ export default function About() {
                             className="rounded-sm content-center drop-shadow-md"
                             src="/static/cam.jpg" 
                             alt="picture of cam"
-                            width={500}
-                            height={400}
+                            width={550}
+                            height={350}
                         />
                     </div>
                     <br />

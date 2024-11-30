@@ -10,7 +10,7 @@ import useMediaQuery from "../useMedia";
 export default function NavBar() {
     const router = useRouter();
     const navMenu: {name:string, dir: string}[] = [{name: 'About', dir: '/about'}, {name: 'Projects', dir: '/projects'}, {name: 'Home', dir: '/'}, {name: 'Magazine', dir: '/magazine'}, {name: 'Contact', dir: '/contact'}]
-    let isPhone = useMediaQuery("(max-width: 812px)")
+    let isPhone = useMediaQuery("(max-width: 650px)")
 
     return (
         <>
