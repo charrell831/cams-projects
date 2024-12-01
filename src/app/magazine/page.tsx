@@ -13,7 +13,7 @@ export type MagazinePage = {
 
 export default function Magazine() {
     const [selected, setSelected] = useState(0)
-    let isPhone = useMediaQuery("(max-width: 820px)")
+    let isPhone = useMediaQuery("(max-width: 860px)")
 
     const magazineVol1 = [
         {imageSrc: '/static/CAMS_PROJECTS_1.jpg'},
@@ -54,7 +54,7 @@ export default function Magazine() {
         <div>
             <NavBar />
             {isPhone ? 
-                  <div {...handleNextPageOnSwipe} className="flex justify-center animate-fadeIn">
+                  <div {...handleNextPageOnSwipe} className="flex justify-center">
                       <Image 
                           src={magazineVol1[selected].imageSrc} 
                           alt="cams projects pg 1"
@@ -63,7 +63,7 @@ export default function Magazine() {
                       />
                   </div>
                 :
-                  <div className="grid grid-cols-3 gap-2 justify-center pt-[2%]  animate-fadeIn">
+                  <div className="grid grid-cols-3 gap-2 justify-center pt-[2%]">
                     <div className="flex justify-center items-center ">
                       <button type="button" onClick={handlePrevPageOnClick} className="rotate-180 text-ellies-yellow bg-dark-red font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2">
                             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -72,7 +72,7 @@ export default function Magazine() {
                           <span className="sr-only">Previous arrow</span>
                         </button>
                       </div>
-                      <div {...handleNextPageOnSwipe} className="transition-opacity ease-in duration-700 opacity-100">
+                      <div {...handleNextPageOnSwipe}>
                           <Image 
                               src={magazineVol1[selected].imageSrc} 
                               alt="cams projects pg 1"
@@ -93,12 +93,14 @@ export default function Magazine() {
             <br />
             <div className="grid grid-cols-3 gap-4 px-[15%]">
                 {magazineVol1.map((page)=>{
-                    return <Image 
-                                src={page.imageSrc} 
-                                alt="cams projects pg 1"
-                                width={350}
-                                height={500}
-                            />
+                    return <div className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110">
+                            <Image 
+                                  src={page.imageSrc} 
+                                  alt="cams projects pg 1"
+                                  width={350}
+                                  height={500}
+                              />
+                          </div>
                 })}
             </div>
         </div>
