@@ -1,7 +1,6 @@
 "use client"
 
 import ProjectCard from "../components/ProjectCard";
-import ProjectRowCard from "../components/ProjectRowCard";
 import useMediaQuery from "../useMedia"
 import NavBar from "../components/NavBar";
 
@@ -12,6 +11,7 @@ export type Project = {
 
 export default function Projects() {
     let isPhone = useMediaQuery("(max-width: 650px)")
+    const screenHeight = isPhone ? 'h-full' : 'h-screen'
 
     const projects = [
         {imageSrc: 'static/mised.jpg', descList: {title: 'the miseducation of us', link: 'https://www.youtube.com/watch?v=nAOWblPoBhU&t=3s'}},
@@ -21,7 +21,7 @@ export default function Projects() {
 
 
     return (
-        <div className="bg-dark-red px-[8%]">
+        <div className={`bg-dark-red px-[8%] ${screenHeight}`}>
             <NavBar />
             <h3 className="pt-12 text-8xl font-script text-ellies-yellow drop-shadow-md">The Work</h3>
             <br />
@@ -38,14 +38,6 @@ export default function Projects() {
                     })}
                 </div>
             }
-            
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
         </div>
         
     )

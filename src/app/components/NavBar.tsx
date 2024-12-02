@@ -34,23 +34,23 @@ export default function NavBar() {
              <Navbar className="pt-[1%] bg-transparent **nav.scrolled { @apply shadow-2xl; border-bottom: 0px; }">
                     <NavbarContent className="grid grid-cols-5 gap-4 px-[15%]">
                         <NavbarItem className="text-center">
-                            <Button 
+                            <button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
                                 onClick={() => router.push('/about')}
                             >
                                 About
-                            </Button>
+                            </button>
                         </NavbarItem>
                         <NavbarItem className="text-center">
-                            <Button 
+                            <button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
                                 onClick={() => {router.push('/projects')}}
                             >
                                 Projects
-                            </Button>
+                            </button>
                         </NavbarItem>
                         <NavbarItem className="text-center">
-                            <Button 
+                            <button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent"  
                                 onClick={() => router.push('/')}
                             >
@@ -60,23 +60,23 @@ export default function NavBar() {
                                     width={150}
                                     height={150}
                                 />
-                            </Button>
+                            </button>
                         </NavbarItem>
                         <NavbarItem className="text-center">
-                            <Button 
+                            <button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
                                 onClick={() => {router.push('/magazine')}}
                             >
                                 Magazine
-                            </Button>
+                            </button>
                         </NavbarItem>
                         <NavbarItem className="text-center">
-                            <Button 
+                            <button 
                                 className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  bg-transparent data-[hover=true]:bg-transparent text-ellies-yellow font-playfair"  
                                 onClick={() => {router.push('/contact')}}
                             >
                                 Contact
-                            </Button>
+                            </button>
                         </NavbarItem>
                     </NavbarContent>
                 </Navbar>

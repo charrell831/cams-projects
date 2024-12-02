@@ -5,7 +5,7 @@ import Link from "next/link";
 import useMediaQuery from "../useMedia";
 
 export default function Contact() {
-    let isPhone = useMediaQuery("(max-width: 820px)")
+    let isPhone = useMediaQuery("(max-width: 470px)")
     const emailSize = isPhone ? "text-ellies-yellow font-script text-3xl text-center" : "text-ellies-yellow font-script text-6xl text-center"
     const projEmailSize = isPhone ? "text-ellies-yellow font-playfair text-2xl text-center" : "text-ellies-yellow font-playfair text-4xl text-center"
     return (
@@ -15,7 +15,7 @@ export default function Contact() {
                 <div className="m-auto">
                     <header className={emailSize}>Email:</header>
                     <Link href="mailto:camsprojects831@gmail.com">
-                        <header className="text-ellies-yellow font-playfair text-4xl text-center">
+                        <header className={projEmailSize}>
                             cams.projects831@gmail.com
                         </header>
                     </Link>

@@ -11,7 +11,7 @@ export default function About() {
     const imagePadding = isPhone ? "flex justify-center items-center pt-[2%] px-[15%]" : "flex justify-center items-center pt-12 pr-[15%]"
     // flex justify-center items-center pt-12 pr-[15%]
     return (
-        <div className="bg-dark-red">
+        <div className="bg-dark-red h-full">
             <NavBar/>
                  <div className= {grid}>
                     <div className={padding}>
@@ -49,7 +49,7 @@ export default function About() {
                             src="/static/cam.jpg" 
                             alt="picture of cam"
                             width={550}
-                            height={350}
+                            height={0}
                         />
                     </div>
                     <br />
