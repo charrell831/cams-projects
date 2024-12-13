@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar";
 import { useState } from "react";
 import { useSwipeable } from 'react-swipeable';
 import useMediaQuery from "../useMedia";
+import Link from "next/link";
 
 export type MagazinePage = {
     imageSrc: string;
@@ -13,6 +14,7 @@ export type MagazinePage = {
 
 export default function Magazine() {
     const [selected, setSelected] = useState(0)
+    const [hovered, setHovered] = useState(false);
     let isPhone = useMediaQuery("(max-width: 860px)")
 
     const magazineVol1 = [
@@ -45,14 +47,26 @@ export default function Magazine() {
       };
 
       const handleNextPageOnSwipe = useSwipeable({
-        onSwipedLeft: handlePrevPageOnClick,
-        onSwipedRight: handleNextPageOnClick,
+        onSwipedLeft: handleNextPageOnClick,
+        onSwipedRight: handlePrevPageOnClick,
         swipeDuration: 500,
       });
 
     return (
         <div>
             <NavBar />
+            <div className="flex justify-center text-center">
+              <div>
+                <h1 className="text-sm font-playfair text-ellies-yellow" onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
+                  RED SWEATER 
+                </h1>
+                <p className="text-xs font-playfair text-ellies-yellow">12.15.24</p>
+                <br />
+                <h1 className="text-sm font-playfair text-ellies-yellow" onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
+                    <Link className={hovered ? "text-dark-red" : "text-ellies-yellow"} href="https://www.youtube.com/watch?v=fmWUyyCHqoU">JOURS NORMAUX</Link> out now
+                </h1>
+              </div>
+            </div>
             {isPhone ? 
                   <div {...handleNextPageOnSwipe} className="flex justify-center items-center">
                       <Image 
@@ -92,6 +106,7 @@ export default function Magazine() {
                   </div>
                   
                 }
+                <br />
                 <div className="grid grid-cols-3 gap-4 px-[15%]">
                           {magazineVol1.map((page)=>{
                               return <div className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110">
