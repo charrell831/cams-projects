@@ -60,7 +60,7 @@ export default function Magazine() {
                 <h1 className="text-sm font-playfair text-ellies-yellow" onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
                   RED SWEATER 
                 </h1>
-                <p className="text-xs font-playfair text-ellies-yellow">12.15.24</p>
+                <p className="text-xs font-playfair text-ellies-yellow">12.16.24</p>
                 <br />
                 <h1 className="text-sm font-playfair text-ellies-yellow" onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
                     <Link className={hovered ? "text-dark-red" : "text-ellies-yellow"} href="https://www.youtube.com/watch?v=fmWUyyCHqoU">JOURS NORMAUX</Link> out now
