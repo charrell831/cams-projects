@@ -58,13 +58,11 @@ export default function Magazine() {
             <div className="flex justify-center text-center">
               <div>
                 <h1 className="text-sm font-playfair text-ellies-yellow" onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
-                  RED SWEATER 
+                <Link className={hovered ? "text-dark-red" : "text-ellies-yellow"} href="https://www.youtube.com/watch?v=KmwxEsbkxvY"> RED SWEATER </Link> out now
                 </h1>
-                <p className="text-xs font-playfair text-ellies-yellow">12.16.24</p>
                 <br />
-                <h1 className="text-sm font-playfair text-ellies-yellow" onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
-                    <Link className={hovered ? "text-dark-red" : "text-ellies-yellow"} href="https://www.youtube.com/watch?v=fmWUyyCHqoU">JOURS NORMAUX</Link> out now
-                </h1>
+                <p className="text-xs font-playfair italic text-ellies-yellow">Christmas Short coming soon</p>
+                <br />
               </div>
             </div>
             {isPhone ? 
