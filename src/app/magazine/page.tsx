@@ -61,8 +61,6 @@ export default function Magazine() {
                 <Link className={hovered ? "text-dark-red" : "text-ellies-yellow"} href="https://www.youtube.com/watch?v=KmwxEsbkxvY"> RED SWEATER </Link> out now
                 </h1>
                 <br />
-                <p className="text-xs font-playfair italic text-ellies-yellow">Christmas Short coming soon</p>
-                <br />
               </div>
             </div>
             {isPhone ? 
