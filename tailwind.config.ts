@@ -15,7 +15,7 @@ const config: Config = {
       },
       colors: {
         'ellies-yellow': '#FFE3BA',
-        'dark-red': '#8F0000'
+        'dark-red': '#6E0000'
       },
       fontFamily: {
         script: ['var(--pinyon-script)'],

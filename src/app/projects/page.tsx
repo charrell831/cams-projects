@@ -12,7 +12,7 @@ export type Project = {
 
 export default function Projects() {
     let isPhone = useMediaQuery("(max-width: 650px)")
-    const screenHeight = isPhone ? 'h-full' : 'h-screen'
+    const screenHeight = isPhone ? 'h-full' : 'min-h-screen'
     const filmList = [
         {name: 'red sweater', link: 'https://youtu.be/KmwxEsbkxvY?si=0V2mXHCtcmqvRsaT'}, 
         {name: '8:15 on a sunday', link: 'https://youtu.be/ruhZTADN4Gw?si=mvP4BPClMDBzbXVh'}, 
@@ -23,7 +23,7 @@ export default function Projects() {
     const projects = [
         {imageSrc: 'static/mised.jpg', descList: {title: 'the miseducation of us', link: 'https://www.youtube.com/watch?v=nAOWblPoBhU&t=3s'}},
         {imageSrc: 'static/jours.jpg', descList: {title: 'jours normaux', link: 'https://www.youtube.com/watch?v=fmWUyyCHqoU&t=19s'}},
-        {imageSrc: 'static/3peat.jpg', descList: {title: 'the 3-peat', link: 'https://www.youtube.com/watch?v=uiCg45Put74'}}
+        {imageSrc: 'static/3peat.jpg', descList: {title: 'the 3-peat', link: 'https://www.youtube.com/watch?v=uiCg45Put74'}},
     ]
 
 
@@ -32,6 +32,7 @@ export default function Projects() {
             <NavBar />
             <h3 className="pt-12 text-8xl font-script text-ellies-yellow drop-shadow-md">The Work</h3>
             <br />
+            <div>
             {isPhone ? 
                 <div className="flex flex-col gap-y-2">
                     {projects.map((proj)=> {
@@ -45,12 +46,14 @@ export default function Projects() {
                     })}
                 </div>
             }
-            {filmList.map((film)=> {
+            </div>
+            <div>
+            {/* {filmList.map((film)=> {
                 return <h1 className="text-ellies-yellow font-playfair font-bold text-2xl">
                             <Link href={film.link}>{film.name}</Link>
                         </h1>
-            })}
-        </div>
-        
+            })} */}
+            </div>
+        </div>    
     )
 }

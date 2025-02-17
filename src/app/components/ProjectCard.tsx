@@ -6,7 +6,7 @@ import useMediaQuery from "../useMedia"
 
 export default function ProjectCard(project: {project: Project}) {
     let isPhone = useMediaQuery("(max-width: 650px)")
-    const cardHeight = isPhone ? 'h-96' : 'h-[200%]'
+    const cardHeight = isPhone ? 'h-96' : 'h-[175%]'
 
     return (
             <div className={`content-center ${cardHeight} relative`}>
