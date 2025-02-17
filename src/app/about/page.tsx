@@ -21,8 +21,8 @@ export default function About() {
                         <br />
                         <p className="text-ellies-yellow font-playfair text-xl">
                             hi! i’m cam, the person behind cam’s projects. cam’s projects 
-                            is a creative studio that produces small films which includes short 
-                            documentaries and narrative shorts.
+                            is a creative studio that produces short narratives and 
+                            documentaries.
                             <br />
                             <br />
                             the documentaries are meant to dive into stories that are not 
